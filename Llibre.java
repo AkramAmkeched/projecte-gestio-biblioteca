@@ -3,6 +3,7 @@ public class Llibre {
     private String autor;
     private boolean prestat;
 
+    // Métode que crea un Llibre (Constructor)
     public Llibre(String titol, String autor) {
         this.titol = titol;
         this.autor = autor;
