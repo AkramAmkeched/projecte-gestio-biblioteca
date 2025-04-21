@@ -30,6 +30,20 @@ public class Llibre {
         prestat = false;
     }
 
+    // Métode que modifica les dades del llibre
+    public void modificar(String propietat, String nouValor) {
+        switch (propietat.toLowerCase()) {
+            case "titol":
+                this.titol = nouValor;
+                break;
+            case "autor":
+                this.autor = nouValor;
+                break;
+            default:
+                System.out.println("Propietat no vàlida. Les propietats disponibles són: titol, autor.");
+        }
+    }
+
     @Override
     public String toString() {
         return titol + " de " + autor + (prestat ? " (En préstec)" : " (Disponible)");
