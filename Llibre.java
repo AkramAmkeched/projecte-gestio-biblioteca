@@ -44,6 +44,13 @@ public class Llibre {
         }
     }
 
+    // Métode que elimina el llibre (Simula l'acció de eliminar un llibre canviant les propietats a null)
+    public void eliminar() {
+        this.titol = null;
+        this.autor = null;
+        this.prestat = false;
+    }
+
     @Override
     public String toString() {
         return titol + " de " + autor + (prestat ? " (En préstec)" : " (Disponible)");
