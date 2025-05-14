@@ -12,7 +12,7 @@ import java.util.regex.Pattern; // Import per treballar amb expressions regulars
 
 public class Biblioteca {
     // Llista que conté els llibres de la biblioteca.
-    private ArrayList<Llibre> llibres;
+    private ArrayList<Llibre> llibres = new ArrayList<>();
 
     // Mètode per afegir un llibre a la biblioteca.
     public void afegirLlibre(Llibre llibre) {
